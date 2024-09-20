@@ -1,17 +1,18 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     max-width: 960px;
     margin: auto;
 }
 h1 {
     font-size: 3em;
-    letter-spacing: .6em;
+    letter-spacing: em;
     padding-top: 1em;
     padding-bottom: 1em;
 }
 
 h2 {
+    font-family: 'Segoe UI',Tahome,Geneva,Verdana,;
     font-size: 1.5em;
     padding-bottom: 1em;
 }
@@ -66,8 +67,8 @@ p {
 
 hr {
     border: none;
-    background-color: lightgray;
-    height: 1px;
+    background-color: black;
+    height: 2px;
 }
 
 h1, h2 {
