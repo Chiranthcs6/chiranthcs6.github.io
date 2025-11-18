@@ -1,0 +1,180 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your entire site.
+# It is *NOT* reloaded automatically when you use `jekyll serve`.
+# If you change this file, please restart the server process.
+
+# --- Theme Settings ---
+minimal_mistakes_skin: "dark" # Use a dark theme like Soham's portfolio
+
+# --- Site Settings ---
+locale: "en-US"
+title: "Chiranth CS"
+title_separator: "-"
+subtitle: # site tagline that appears below site title in masthead
+name: "Chiranth C S"
+description: "Motivated and enthusiastic Computer Science and Engineering student with a passion for technology and software development. Eager to build innovative solutions."
+url: "https://chiranthcs6.github.io" # Your GitHub Pages URL
+baseurl: "" # the subpath of your site, e.g. "/blog"
+repository: "Chiranthcs6/chiranthcs6.github.io" # GitHub username/repo-name
+words_per_minute: 200
+comments:
+  provider: # false (default)
+
+# SEO Related (Optional, uncomment and fill in later)
+# google_site_verification:
+# bing_site_verification:
+
+# Social Sharing (Optional, these are different from author links)
+# twitter:
+#   username: chiranth_cs
+
+# Analytics (Optional)
+# analytics:
+#   provider: "google-gtag"
+#   google:
+#     tracking_id: "YOUR_TRACKING_ID"
+
+# --- Site Author (Sidebar Profile) ---
+author:
+  name: "Chiranth C S"
+  avatar: "/assets/images/profile-photo.jpg" # Place your photo here
+  bio: "Software Engineering Student | CSE @ SJC Institute of Technology. Eager to build innovative solutions."
+  location: "Bengaluru, India"
+  email: # Leave blank if using links below
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:chiranthcs5@yahoo.com"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://chiranthcs6.github.io"
+    - label: "X (Twitter)"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://x.com/chiranth_cs"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Chiranthcs6"
+
+# --- Site Footer ---
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://x.com/chiranth_cs"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Chiranthcs6"
+  since: "2023"
+
+# --- Reading Files (Standard Jekyll Settings) ---
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - minimal-mistakes-jekyll.gemspec
+  - node_modules
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - README
+  - tmp
+  - /docs
+  - /test
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# --- Conversion ---
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# --- Markdown Processing ---
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# --- Sass/SCSS ---
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# --- Outputting ---
+permalink: /:categories/:title/
+timezone: Asia/Kolkata # Corrected timezone name
+
+# --- Pagination with jekyll-paginate (Default) ---
+paginate: 5
+paginate_path: /page:num/
+
+# --- Plugins ---
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+# --- Archives ---
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+# --- HTML Compression ---
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+# --- Defaults ---
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: # true
+      share: true
+      related: true
